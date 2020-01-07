@@ -3,9 +3,44 @@
     padding: 0;
 }
 
+.auth {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/mic-wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.auth-body {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+}
+
+.auth .auth-body .card-header{
+    display: flex;
+    justify-content: center;
+}
+
+.yuk {
+    color: #5199FF;
+    font-weight: bold;
+}
+
+.komedi {
+    color: #ffffff;
+    padding: 2px 8px;
+    border: #5199FF 1px solid;
+    border-radius: 5px;
+    background-color: #5199FF;
+}
+
 .index {
     width: 80%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .home {
@@ -20,16 +55,16 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #ffa9a9;
-    margin-top: 10px;
 }
 
 .home-main-jumbotron {
     background-color: inherit;
+    margin-bottom: 75px;
 }
 
 .home-context {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: fit-content;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -65,7 +100,7 @@
 .home-context .wallpaper .ref {
     color: #ffffff;
     font-size: 21px;
-    font-style: bold;
+    font-weight: bold;
     background-color: inherit;
     border: none;
     padding: 5px 10px;
@@ -76,4 +111,5 @@
     color: #fd6969;
     background-color: #ffffff;
     transition: 0.5s;
+    cursor: pointer;
 }

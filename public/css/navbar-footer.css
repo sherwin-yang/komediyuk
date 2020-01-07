@@ -41,19 +41,6 @@ body {
     margin: 0 auto;
 }
 
-.yuk {
-    color: #5199FF;
-    font-weight: bold;
-}
-
-.komedi {
-    color: #ffffff;
-    padding: 2px 8px;
-    border: #5199FF 1px solid;
-    border-radius: 5px;
-    background-color: #5199FF;
-}
-
 .nav-sidebar {
     position: fixed;
     left: 0;
@@ -103,4 +90,19 @@ body {
 
 .nav-sidebar ul li a:hover {
     background-color: #353535;
+}
+
+.footer {
+    position: static;
+    bottom: 0;
+    height: 200px;
+    background-color: #414042;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: #ffffff;
 }
