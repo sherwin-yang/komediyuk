@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.home-main-mssg {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffa9a9;
+    margin-top: 10px;
+}
+
+.home-main-jumbotron {
+    background-color: inherit;
+}
+
+.home-context {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.home-context .wallpaper {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px 75px 0 75px ;
+    border-radius: 100%;
+    opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-context .komika {
+    background-image: url('../image//standup1.jpg');
+}
+
+.home-context .video {
+    background-image: url('../image//standup2.jpg');
+}
+
+.home-context .tiket {
+    background-image: url('../image//standup3.jpg');
+}
+
+.home-context .wallpaper .ref {
+    color: #ffffff;
+    font-size: 21px;
+    font-style: bold;
+    background-color: inherit;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.home-context .wallpaper .ref:hover {
+    color: #fd6969;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
