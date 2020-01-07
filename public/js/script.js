@@ -33,3 +33,12 @@ let toggleNav = function() {
         toggleNavStatus = false;
     }
 }
+
+
+function visitLogin() {
+    window.location.replace('/login');
+}
+
+function visitRegister() {
+    window.location.replace('/register');
+}

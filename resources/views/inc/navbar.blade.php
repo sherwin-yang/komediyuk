@@ -1,6 +1,6 @@
 <nav class="nav-main">
     <div class="toggle-btn" onclick="toggleNav()"></div>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <span class="yuk">AYO</span>
         <span class="komedi">KOMEDI</span>
     </a>

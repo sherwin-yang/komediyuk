@@ -84,7 +84,11 @@
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
                             <div class="col-md-6">
+<<<<<<< HEAD
                                 <input id="address" type="text" class="form-control @error('gender') is-invalid @enderror" name="address" value="{{ old('gender') }}" required autocomplete="gender" autofocus>
+=======
+                                <input id="address" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender" autofocus>
+>>>>>>> 22bf015b8548756d4d6bf2e10470e7166f0bb4ec
 
                                 @error('gender')
                                     <span class="invalid-feedback" role="alert">

@@ -100,7 +100,7 @@
 .home-context .wallpaper .ref {
     color: #ffffff;
     font-size: 21px;
-    font-style: bold;
+    font-weight: bold;
     background-color: inherit;
     border: none;
     padding: 5px 10px;
@@ -111,4 +111,5 @@
     color: #fd6969;
     background-color: #ffffff;
     transition: 0.5s;
+    cursor: pointer;
 }
