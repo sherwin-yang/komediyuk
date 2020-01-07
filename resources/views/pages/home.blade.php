@@ -3,8 +3,12 @@
 @section('content')
 <div class="jumbotron jumbotron-fluid home-main-jumbotron">
     <div class="container home">
-      <h1 class="display-4">Hello, !</h1>
-      <p class="home-main-mssg">TEMUKAN TIKETMU HANYA DI SINI</p>
+        @guest
+            <h1 class="display-4">Hello, guest!</h1>
+        @else
+            <h1 class="display-4">Hello, {{Auth::user()->name}}!</h1>
+        @endguest
+        <p class="home-main-mssg">TEMUKAN TIKETMU HANYA DI SINI</p>
     </div>
 </div>
 
