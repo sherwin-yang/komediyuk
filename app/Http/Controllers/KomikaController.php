@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Keranjang;
+use App\Komika;
 use Illuminate\Http\Request;
 
-class KeranjangController extends Controller
+class KomikaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class KeranjangController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Keranjang  $keranjang
+     * @param  \App\Komika  $komika
      * @return \Illuminate\Http\Response
      */
-    public function show(Keranjang $keranjang)
+    public function show(Komika $komika)
     {
         //
     }
@@ -52,10 +52,10 @@ class KeranjangController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Keranjang  $keranjang
+     * @param  \App\Komika  $komika
      * @return \Illuminate\Http\Response
      */
-    public function edit(Keranjang $keranjang)
+    public function edit(Komika $komika)
     {
         //
     }
@@ -64,10 +64,10 @@ class KeranjangController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Keranjang  $keranjang
+     * @param  \App\Komika  $komika
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Keranjang $keranjang)
+    public function update(Request $request, Komika $komika)
     {
         //
     }
@@ -75,10 +75,10 @@ class KeranjangController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Keranjang  $keranjang
+     * @param  \App\Komika  $komika
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Keranjang $keranjang)
+    public function destroy(Komika $komika)
     {
         //
     }
