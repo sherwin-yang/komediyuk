@@ -15,6 +15,7 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('komika_id');
             $table->foreign('komika_id')->references('id')->on('komikas')->onUpdate('cascade')->onDelete('cascade');
             $table->string('category');
             $table->integer('price');

@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ticket extends Model
 {
-    public function CartDetail(){
+    public function cartDetail(){
         return $this->belongsTo(CartDetail::class);
     }
-    public function Komika(){
+    public function komika(){
         return $this->hasMany(Komika::class);
     }
-    public function OrderDetail(){
+    public function orderDetail(){
         return $this->belongsTo(OrderDetail::class);
     }
 }
