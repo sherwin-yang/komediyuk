@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateKeranjangsTable extends Migration
+class CreateVideosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateKeranjangsTable extends Migration
      */
     public function up()
     {
-        Schema::create('keranjangs', function (Blueprint $table) {
+        Schema::create('videos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('komika_id');
+            $table->string('url');
+            $table->foreign('komika_id')->references('id')->on('komikas')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateKeranjangsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('keranjangs');
+        Schema::dropIfExists('videos');
     }
 }
