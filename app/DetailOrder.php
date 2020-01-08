@@ -9,4 +9,8 @@ class DetailOrder extends Model
     public function order(){
         return $this->belongsTo(Order::class);
     }
+    public function tiket(){
+        return $this->belongsTo(Tiket::class);
+    }
+    
 }
